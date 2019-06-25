@@ -1,40 +1,39 @@
 .nav-container {
     background: #212121;
     height: 100px;
-    display: flex;
-    // justify-content: space-between;
-    width: 100%;
 
     .logo {
         height: 100px;
         width: 100px;
+        float: left;
     }
     
     h1 {
         font-size: 1.6rem;
         color: white;
         margin: auto 0;
-
+        float: left;
     }
 
     .nav {
-        display: flex;
-        justify-content: flex-end;
+        display: inline-flex;
         width: 500px;
-        align-items: center;
+        height: 100%;
         background: red;
         float: right;
+        
 
         a {
             color: white;
             text-decoration: none;
-            font-size: 1.6rem;
-            margin: 0 20px;
+            font-size: 1rem;
+            // margin: 0 20px;
         }
 
         .btn {
             height: 50px;
-            margin: 0 30px;
+            margin: auto;
+            float: right;
         }
     }
 }
