@@ -134,6 +134,9 @@ body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
+img {
+  width: 500px;
+}
 .nav-container {
   background: #212121;
   height: 100px;
