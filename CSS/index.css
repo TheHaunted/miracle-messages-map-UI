@@ -132,36 +132,32 @@ table {
 }
 body {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 .nav-container {
   background: #212121;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-container .logo {
-  height: 100px;
-  width: 100px;
-  float: left;
-}
-.nav-container h1 {
-  font-size: 1.6rem;
-  color: white;
   margin: auto 0;
-  float: left;
 }
 .nav-container .nav {
   display: inline-flex;
   width: 500px;
   height: 100%;
-  background: red;
   float: right;
 }
 .nav-container .nav a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
+  margin: auto 20px;
 }
 .nav-container .nav .btn {
   height: 50px;
   margin: auto;
   float: right;
+  background: #FFFFFF;
 }
