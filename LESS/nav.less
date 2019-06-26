@@ -11,10 +11,10 @@
 
     .nav {
         display: inline-flex;
-        width: 500px;
+        max-width: 500px;
         height: 100%;
-        float: right;
-        
+        width: 100%;
+        flex-wrap: wrap;
 
         a {
             color: white;
@@ -25,9 +25,12 @@
 
         .btn {
             height: 50px;
-            margin: auto;
+            margin: auto 0 auto 10px;
             float: right;
             background: #FFFFFF;
+            border-style: none;
+            border-radius: 15px;
+            padding: 0 30px;
         }
     }
 }
