@@ -1,34 +1,45 @@
 class Carousel {
     constructor(element) {
         this.element = element;
+        
         this.carouselImages = element.querySelectorAll('.carousel-img');
+        
         this.carouselImages = Array.from(this.carouselImages).map(image => {
             return new CarouselImage(image);
         });
 
         this.leftButton = element.querySelector('.left');
+        
         this.rightButton = element.querySelector('.right');
+        
         this.selectedIndex = 0;
+        
         this.carouselImages[this.selectedIndex].select();
 
         this.rightButton.addEventListener('click', () => {
             clearInterval(this.interval);
+            
             this.next();
         });
+        
         this.leftButton.addEventListener('click', () => {
             clearInterval(this.interval);
+            
             this.previous();
         });
+        
         this.interval = setInterval(() => this.next(), 3000);
     }
 
     next() {
         this.selectedIndex = (this.selectedIndex + 1) % this.carouselImages.length
+        
         this.carouselImages[this.selectedIndex].select();
     }
 
     previous() {
         this.selectedIndex = (this.selectedIndex - 1 + this.carouselImages.length) % this.carouselImages.length
+        
         this.carouselImages[this.selectedIndex].select();
     }
 }

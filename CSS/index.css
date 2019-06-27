@@ -140,6 +140,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 640px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+}
 .nav-container .logo {
   width: 200px;
   margin: auto 0 auto 20px;
@@ -151,12 +158,23 @@ body {
   width: 100%;
   flex-wrap: wrap;
 }
+@media (max-width: 640px) {
+  .nav-container .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .nav-container .nav a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
   margin: auto 20px;
-  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .nav-container .nav a {
+    margin: 0;
+    padding: 20px 0;
+  }
 }
 .nav-container .nav a .nav-btn {
   height: 50px;
@@ -292,6 +310,11 @@ body {
   max-width: 560px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 640px) {
+  .network-logos {
+    justify-content: space-around;
+  }
 }
 .network-logos a img {
   width: 100px;
