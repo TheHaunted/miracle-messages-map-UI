@@ -134,9 +134,6 @@ body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
-img {
-  width: 500px;
-}
 .nav-container {
   background: #212121;
   height: 100px;
@@ -149,7 +146,7 @@ img {
 }
 .nav-container .nav {
   display: inline-flex;
-  max-width: 500px;
+  max-width: 550px;
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
@@ -159,8 +156,9 @@ img {
   text-decoration: none;
   font-size: 1rem;
   margin: auto 20px;
+  cursor: pointer;
 }
-.nav-container .nav .btn {
+.nav-container .nav a .nav-btn {
   height: 50px;
   margin: auto 0 auto 10px;
   float: right;
@@ -196,11 +194,23 @@ img {
   justify-content: space-between;
   max-width: 800px;
   width: 100%;
+  margin-top: 20px;
+}
+@media (max-width: 640px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .stats-container .stats-box {
   max-width: 250px;
   width: 100%;
   text-align: center;
+}
+@media (max-width: 640px) {
+  .stats-container .stats-box {
+    margin: 20px;
+  }
 }
 .stats-container .stats-box h2 {
   font-size: 2rem;
@@ -214,27 +224,23 @@ img {
   width: 100%;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
-.mission img {
+.mission .mission-img {
   width: 48%;
-  object-fit: scale-down;
   float: left;
   margin: 0 10px 10px 0;
+}
+@media (max-width: 640px) {
+  .mission .mission-img {
+    display: block;
+    width: 100%;
+  }
 }
 .mission p {
   color: #5E5E5E;
   font-size: 1.2rem;
   line-height: 2;
-}
-.carousel {
-  display: none;
-}
-.carousel h2 {
-  width: 100%;
-  font-size: 2rem;
-  clear: left;
-  text-align: center;
 }
 .objectives {
   clear: left;
@@ -264,6 +270,17 @@ img {
 }
 .objectives .core-objectives div {
   width: 30%;
+}
+@media (max-width: 640px) {
+  .objectives .core-objectives div {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .objectives .core-objectives {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .video {
   max-width: 560px;
@@ -302,4 +319,48 @@ footer .footer-content p {
   margin-bottom: 40px;
   max-width: 700px;
   width: 95%;
+}
+.carousel {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+@media (max-width: 640px) {
+  .carousel {
+    display: none;
+  }
+}
+.carousel h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.carousel .carousel-images-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.carousel .carousel-images-container .carousel-img {
+  display: none;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+.carousel .carousel-images-container .active {
+  display: flex;
+}
+.carousel .carousel-images-container button {
+  margin: 0 auto;
+}
+.carousel .carousel-content-container .carousel-content {
+  display: none;
+  font-size: 1.2rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+.carousel .carousel-content-container .active {
+  display: flex;
 }

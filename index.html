@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="carousel\carousel.js" defer></script>
     <title>Miracle Messages</title>
 </head>
 
@@ -18,13 +19,11 @@
                 <a class="nav-link" href="#">About</a>
                 <a class="nav-link" href="#">Reunion Service</a>
                 <a class="nav-link" href="#">Contact Us</a>
-                <button class="btn">Volunteer</button>
+                <a href="https://miracle-messages.netlify.com/"><button class="nav-btn">Volunteer</button></a>
             </nav>
         </div>
 
         <div class="header">
-            <!-- <img src="images\header-img.jpg" alt="logo"> -->
-
             <div class="cta">
                 <p>Help a person experiencing homelessness reconnect with their loved ones.</p>
                 <a href="#"><button class="cta-btn">Sign Up</button></a>
@@ -59,7 +58,7 @@
             
             <section class="mission">
                 <h2>We are Miracle Messages.</h2>
-                <img class="mission" src="images\mission.jpg">
+                <img class="mission-img" src="images\mission.jpg">
                 <p>We are a nonprofit reunion service to help our neighbors experiencing homelessness reunite with their
                     loved ones in a positive and supportive way. Our process is simple and effective: we train local
                     referral partners and volunteers (like you!) how to record and deliver Miracle Messages from their
@@ -72,38 +71,28 @@
 
             <section class="carousel">
                 <h2>Miracle messages at work.</h2>
-                <ul>
-                    <li><img class="carousel-img" data-item="1" src="images\carousel1.jpg"></li>
-                    <li><img class="carousel-img" data-item="2" src="images\carousel2.jpg"></li>
-                    <li><img class="carousel-img" data-item="3" src="images\carousel3.jpg"></li>
-                    <li><img class="carousel-img" data-item="4" src="images\carousel4.jpg"></li>
-                    <li><img class="carousel-img" data-item="5" src="images\carousel5.jpg"></li>
-                    <li><img class="carousel-img" data-item="6" src="images\carousel6.jpg"></li>
-                    <li><img class="carousel-img" data-item="7" src="images\carousel7.jpg"></li>
-                </ul>
-                <ul>
-                    <li>
-                        <p class="carousel-content" data-item="1">content 1</p>
-                    </li>
-                    <li>
-                        <p class="carousel-content" data-item="2">content 2</p>
-                    </li>
-                    <li>
-                        <p class="carousel-content" data-item="3">content 3</p>
-                    </li>
-                    <li>
-                        <p class="carousel-content" data-item="4">content 4</p>
-                    </li>
-                    <li>
-                        <p class="carousel-content" data-item="5">content 5</p>
-                    </li>
-                    <li>
-                        <p class="carousel-content" data-item="6">content 6</p>
-                    </li>
-                    <li>
-                        <p class="carousel-content" data-item="7">content 7</p>
-                    </li>
-                </ul>
+                <div class="carousel-images-container">
+                    <img class="carousel-img active" data-item="1" src="images\carousel1.jpg">
+                    <img class="carousel-img" data-item="2" src="images\carousel2.jpg">
+                    <img class="carousel-img" data-item="3" src="images\carousel3.jpg">
+                    <img class="carousel-img" data-item="4" src="images\carousel4.jpg">
+                    <img class="carousel-img" data-item="5" src="images\carousel5.jpg">
+                    <img class="carousel-img" data-item="6" src="images\carousel6.png">
+                    <img class="carousel-img" data-item="7" src="images\carousel7.jpg">
+                    <button class="left">Left</button>
+                    <button class="right">right</button>
+                </div>
+                
+                <div class="carousel-content-container">
+                    <p class="carousel-content active" data-item="1">content 1</p>
+                    <p class="carousel-content" data-item="2">content 2</p>
+                    <p class="carousel-content" data-item="3">content 3</p>    
+                    <p class="carousel-content" data-item="4">content 4</p>
+                    <p class="carousel-content" data-item="5">content 5</p>   
+                    <p class="carousel-content" data-item="6">content 6</p>
+                    <p class="carousel-content" data-item="7">content 7</p>
+                </div>
+                
             </section>
         </section>
 
@@ -164,11 +153,11 @@
 
             </section>
 
-            <section class="video">
+            <!-- <section class="video">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/0HfhOXM7PW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
                 
-            </section>
+            </section> -->
             <div class="network-logos">
                 <a href="https://www.adweek.com/brand-marketing/shinolas-uplifting-new-ads-celebrate-americas-builders-makers-and-do-gooders/"><img src="images\networks\adweek.png" alt=""></a>
                 <a href="https://www.brut.media/us/news/reconnecting-the-homeless-with-family-via-social-media-2d6827b4-9a6a-44cb-8a1d-b73137e53513"><img src="images\networks\brut.png" alt=""></a>
