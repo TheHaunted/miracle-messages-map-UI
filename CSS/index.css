@@ -145,7 +145,7 @@ img {
 }
 .nav-container .logo {
   width: 200px;
-  margin: auto 0;
+  margin: auto 0 auto 20px;
 }
 .nav-container .nav {
   display: inline-flex;
@@ -170,18 +170,18 @@ img {
   padding: 0 30px;
 }
 .header {
-  filter: brightness(60%);
   width: 100%;
 }
 .header .cta {
   background-image: url(/images/header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(60%);
 }
 .header .cta p {
   color: white;
   font-size: 2rem;
-  padding: 400px 50px 0 50px;
+  padding: 700px 50px 0 50px;
 }
 .header .cta a .cta-btn {
   display: inline-block;
@@ -194,7 +194,8 @@ img {
 .stats-container {
   display: flex;
   justify-content: space-between;
-  margin: 20px 50px;
+  max-width: 800px;
+  width: 100%;
 }
 .stats-container .stats-box {
   max-width: 250px;
@@ -273,6 +274,7 @@ img {
   flex-wrap: wrap;
   max-width: 560px;
   width: 100%;
+  margin: 0 auto;
 }
 .network-logos a img {
   width: 100px;
