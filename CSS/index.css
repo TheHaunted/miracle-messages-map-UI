@@ -200,6 +200,26 @@ body {
     color: white;
   }
 }
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  background: #017BFB;
+  position: relative;
+  z-index: 1;
+}
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 20px;
+  border-top: 1px solid white;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/header-img.jpg);
   background-size: cover;

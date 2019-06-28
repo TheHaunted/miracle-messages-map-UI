@@ -71,7 +71,6 @@ class CarouselImage {
 class CarouselContent {
     constructor(element) {
         this.element = element;
-        console.log(this.element);
     }
 
     select() {
