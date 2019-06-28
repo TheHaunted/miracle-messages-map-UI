@@ -344,7 +344,7 @@ body {
 footer {
   height: 380px;
   width: 100%;
-  background: #212121;
+  background: #017BFB;
   color: white;
   text-align: center;
   display: flex;
@@ -357,7 +357,7 @@ footer .footer-content h5 {
   margin-bottom: 40px;
 }
 footer .footer-content p {
-  color: #797979;
+  color: #4b4b4b;
   font-size: 1.2rem;
   line-height: 2;
   margin-bottom: 40px;
@@ -365,8 +365,9 @@ footer .footer-content p {
   width: 95%;
 }
 footer .footer-content .donate-btn {
-  background: #5FC484;
-  color: white;
+  background: white;
+  font-weight: bold;
+  font-size: 1.2rem;
   padding: 20px 40px;
   border-style: none;
   border-radius: 20px;
