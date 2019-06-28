@@ -135,7 +135,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .nav-container {
-  background: #212121;
+  background: #017BFB;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -191,14 +191,14 @@ body {
 }
 .header .cta {
   background-image: url(/images/header-img.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   filter: brightness(60%);
+  width: 1800px;
 }
 .header .cta p {
   color: white;
   font-size: 2rem;
-  padding: 700px 50px 0 50px;
 }
 .header .cta a .cta-btn {
   display: inline-block;
