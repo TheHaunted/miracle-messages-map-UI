@@ -285,6 +285,9 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+.objectives .objective-summary {
+  padding-bottom: 40px;
+}
 .objectives h2 {
   font-size: 2rem;
 }
