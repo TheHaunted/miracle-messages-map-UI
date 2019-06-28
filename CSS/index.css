@@ -180,7 +180,7 @@ body {
   height: 50px;
   margin: auto 0 auto 10px;
   float: right;
-  background: #5FC484;
+  background: white;
   border-style: none;
   border-radius: 20px;
   padding: 0 30px;
@@ -191,10 +191,11 @@ body {
 }
 .header .cta {
   background-image: url(/images/header-img.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
   filter: brightness(60%);
-  width: 1800px;
 }
 .header .cta p {
   color: white;
