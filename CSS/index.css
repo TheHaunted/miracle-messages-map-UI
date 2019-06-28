@@ -156,11 +156,6 @@ body {
     display: none;
   }
 }
-@media (max-width: 640px) {
-  .nav-container .nav {
-    display: none;
-  }
-}
 .nav-container .nav a {
   color: white;
   text-decoration: none;
@@ -204,6 +199,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   border: 1px solid black;
   background: #017BFB;
   position: relative;
@@ -216,6 +212,18 @@ body {
   padding: 20px;
   border-top: 1px solid white;
   width: 100%;
+}
+.mobile-nav .reunion-service-items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #017BFB;
+  position: relative;
+  z-index: 1;
+  width: 80%;
+}
+.mobile-nav .hidden {
+  display: none;
 }
 .hidden {
   display: none;
