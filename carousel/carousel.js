@@ -62,11 +62,7 @@ class CarouselImage {
             image.classList.remove('active');
         });
 
-        // nextItem = this.element[`${this.data}`]
-
         this.element.classList.add('active');
-
-        // if()
 
         this.itemContent.select();
     }
@@ -87,10 +83,5 @@ class CarouselContent {
         this.element.classList.add('active');
     }
 }
-
-// let carousel = document.querySelectorAll('.carousel-img');
-// carousel.forEach(item => new CarouselImage(item));
-
-// carousel.setInterval()
 
 let carousel = document.querySelectorAll('.carousel').forEach(carousel => new Carousel(carousel));

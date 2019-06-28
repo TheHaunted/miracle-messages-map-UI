@@ -180,10 +180,11 @@ body {
   height: 50px;
   margin: auto 0 auto 10px;
   float: right;
-  background: #FFFFFF;
+  background: #5FC484;
   border-style: none;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 0 30px;
+  cursor: pointer;
 }
 .header {
   width: 100%;
@@ -303,6 +304,7 @@ body {
 .video {
   max-width: 560px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 .network-logos {
   display: flex;
@@ -342,6 +344,14 @@ footer .footer-content p {
   margin-bottom: 40px;
   max-width: 700px;
   width: 95%;
+}
+footer .footer-content .donate-btn {
+  background: #5FC484;
+  color: white;
+  padding: 20px 40px;
+  border-style: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .carousel {
   max-width: 800px;
