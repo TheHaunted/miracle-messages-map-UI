@@ -222,6 +222,15 @@ body {
   z-index: 1;
   width: 80%;
 }
+.mobile-nav .about-items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #017BFB;
+  position: relative;
+  z-index: 1;
+  width: 80%;
+}
 .mobile-nav .hidden {
   display: none;
 }
