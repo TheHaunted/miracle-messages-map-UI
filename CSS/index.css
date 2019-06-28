@@ -156,6 +156,31 @@ body {
     display: none;
   }
 }
+.nav-container .nav .dropdown {
+  margin: auto 0;
+}
+.nav-container .nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.nav-container .nav .dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.nav-container .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav-container .nav .dropdown-content a:hover {
+  background-color: #017BFB;
+}
 .nav-container .nav a {
   color: white;
   text-decoration: none;
@@ -171,6 +196,7 @@ body {
   border-radius: 20px;
   padding: 0 30px;
   cursor: pointer;
+  font-weight: bold;
 }
 .nav-container .icon {
   display: none;
@@ -330,6 +356,10 @@ body {
   color: #5E5E5E;
   font-size: 1.2rem;
   line-height: 2;
+}
+.mission p a {
+  text-decoration: none;
+  color: #4597BA;
 }
 .objectives {
   clear: left;
