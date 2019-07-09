@@ -139,10 +139,11 @@ body {
   height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-container .logo {
   width: 200px;
-  margin: auto 0 auto 20px;
+  margin-left: 20px;
 }
 .nav-container .nav {
   display: inline-flex;
@@ -158,6 +159,10 @@ body {
 }
 .nav-container .nav .dropdown {
   margin: auto 0;
+}
+.nav-container .nav .dropdown .about-dropdown {
+  position: relative;
+  z-index: 1;
 }
 .nav-container .nav .dropdown .dropdown-content {
   display: none;
@@ -206,17 +211,7 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin: auto 0;
-    font-size: 50px;
-    color: white;
-  }
-}
-@media (max-width: 640px) {
-  .nav-container .icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: auto 0;
+    margin: auto 20px auto 0;
     font-size: 50px;
     color: white;
   }
@@ -226,7 +221,6 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  border: 1px solid black;
   background: #017BFB;
   position: relative;
   z-index: 1;
@@ -242,20 +236,20 @@ body {
 .mobile-nav .reunion-service-items {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background: #017BFB;
+  background: #006de2;
   position: relative;
   z-index: 1;
-  width: 80%;
+  width: 100%;
+  align-items: center;
 }
 .mobile-nav .about-items {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background: #017BFB;
+  background: #006de2;
   position: relative;
   z-index: 1;
-  width: 80%;
+  width: 100%;
+  align-items: center;
 }
 .mobile-nav .hidden {
   display: none;
@@ -287,6 +281,8 @@ body {
   line-height: 1.5;
   padding-top: 200px;
   font-weight: bold;
+  height: 50vh;
+  margin: auto 0;
 }
 .header .cta a .cta-btn {
   color: white;
@@ -439,6 +435,11 @@ footer .footer-content h5 {
   font-size: 1.2rem;
   color: #d2d2d2;
   margin-bottom: 40px;
+}
+@media (max-width: 640px) {
+  footer .footer-content {
+    margin-top: 40px;
+  }
 }
 footer .footer-content p {
   color: #4b4b4b;

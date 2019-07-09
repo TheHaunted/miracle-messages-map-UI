@@ -3,10 +3,11 @@
     height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .logo {
         width: 200px;
-        margin: auto 0 auto 20px;
+        margin-left: 20px;
     }
 
     .nav {
@@ -22,6 +23,11 @@
 
         .dropdown {
             margin: auto 0;
+
+            .about-dropdown {
+                position: relative;
+                z-index: 1;
+            }
             
             .dropdown-content {
                 display: none;
@@ -77,16 +83,7 @@
             display: inline-block;
             width: 50px;
             height: 50px;
-            margin: auto 0;
-            font-size: 50px;
-            color: white;
-        }
-
-        @media @mobile {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin: auto 0;
+            margin: auto 20px auto 0;
             font-size: 50px;
             color: white;
         }
@@ -98,7 +95,6 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    border: 1px solid black;
     background: @blue;
     position: relative;
     z-index: 1;
@@ -115,23 +111,25 @@
     .reunion-service-items {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        background: @blue;
+        background: #006de2;
         position: relative;
         z-index: 1;
-        width: 80%;
-
+        width: 100%;
+        align-items: center;
     }
 
     .about-items {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        background: @blue;
+        background: #006de2;
         position: relative;
         z-index: 1;
-        width: 80%;
+        width: 100%;
+        align-items: center;
 
+        a {
+
+        }
     }
 
     .hidden {
