@@ -1,0 +1,145 @@
+.main-container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 800px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    margin: 20px auto 0 auto;
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-box {
+        max-width: 250px;
+        width: 100%;
+        text-align: center;
+
+        @media @mobile {
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #5E5E5E;
+            margin-top: 20px;
+        }
+    }
+}
+
+.mission {
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+
+    .mission-img {
+        width: 48%;
+        float: left;
+        margin: 0 10px 10px 0;
+
+        @media @mobile {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    p {
+        color: #5E5E5E;
+        font-size: 1.2rem;
+        line-height: 2;
+
+        a {
+            text-decoration: none;
+            color: #4597BA;
+        }
+    }
+}
+
+.objectives {
+    clear: left;
+    text-align: center;
+    margin-top: 20px;
+
+    .objective-summary {
+        padding-bottom: 40px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        color: #5E5E5E;
+        line-height: 2;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+
+    .core-objectives {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 30%;
+
+            @media @mobile {
+                width: 100%;
+            }
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.video {
+    max-width: 560px;
+    margin: 0 auto;
+    margin-top: 60px;
+    
+}
+
+.network-logos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @mobile {
+        justify-content: space-around;
+    }
+
+    a {
+        img {
+            width: 100px;
+            margin: 20px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(/images/header-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    // filter: brightness(60%);
+
+    .cta {
+        
+        // text-align: center;
+        // margin: auto 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 500px;
+
+        p {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+            padding-top: 200px;
+            font-weight: bold;
+        }
+    
+        a {
+    
+            .cta-btn {
+                color: white;
+                font-weight: bold;
+                font-size: 1.2rem;
+                display: inline-block;
+                margin-top: 50px;
+                padding: 20px 40px;
+                background: @blue;
+                border-style: none;
+                border-radius: 20px;
+            }
+        }
+    }
+}
